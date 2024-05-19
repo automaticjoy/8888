@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6189ed1955337af1585b2354d19dc032 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6189ed1955337af1585b2354d19dc032" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6189ed1955337af1585b2354d19dc032 = L.map(
+                "map_6189ed1955337af1585b2354d19dc032",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7d1969b1d1d0f5133fa481dd488534bc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+            var marker_b51a56b49a5d6cf522f89e92d5b515a0 = L.marker(
+                [37.0036, -88.3504],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_e8392d3c6f14f3d6bf4ef36088c60714 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65fcd57e4bd2ac2c2d5a26187fddc525 = $(`<div id="html_65fcd57e4bd2ac2c2d5a26187fddc525" style="width: 100.0%; height: 100.0%;">Calvert City, Kentucky, USA<br>Products: Special Bar Quality (SBQ) steel, merchant bars</div>`)[0];
+                popup_e8392d3c6f14f3d6bf4ef36088c60714.setContent(html_65fcd57e4bd2ac2c2d5a26187fddc525);
+            
+        
+
+        marker_b51a56b49a5d6cf522f89e92d5b515a0.bindPopup(popup_e8392d3c6f14f3d6bf4ef36088c60714)
+        ;
+
+        
+    
+    
+            marker_b51a56b49a5d6cf522f89e92d5b515a0.bindTooltip(
+                `<div>
+                     Calvert City, Kentucky, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81289aebe15763ad40f3a0cf6c5868b5 = L.marker(
+                [35.2271, -80.8431],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_decab82dbc172d3361a00f1ddd107425 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf40f3564030cba8f03aaeb3bd68133c = $(`<div id="html_cf40f3564030cba8f03aaeb3bd68133c" style="width: 100.0%; height: 100.0%;">Charlotte, North Carolina, USA<br>Products: Merchant bars, rebar</div>`)[0];
+                popup_decab82dbc172d3361a00f1ddd107425.setContent(html_cf40f3564030cba8f03aaeb3bd68133c);
+            
+        
+
+        marker_81289aebe15763ad40f3a0cf6c5868b5.bindPopup(popup_decab82dbc172d3361a00f1ddd107425)
+        ;
+
+        
+    
+    
+            marker_81289aebe15763ad40f3a0cf6c5868b5.bindTooltip(
+                `<div>
+                     Charlotte, North Carolina, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea72c3d64ea14f9728804cc2c5d1ac94 = L.marker(
+                [42.2459, -84.4013],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_ab3d1929a9417ba71ec3abe06588519b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f682972b838e1844e043483a5642ef3b = $(`<div id="html_f682972b838e1844e043483a5642ef3b" style="width: 100.0%; height: 100.0%;">Jackson, Michigan, USA<br>Products: Special Bar Quality (SBQ) steel</div>`)[0];
+                popup_ab3d1929a9417ba71ec3abe06588519b.setContent(html_f682972b838e1844e043483a5642ef3b);
+            
+        
+
+        marker_ea72c3d64ea14f9728804cc2c5d1ac94.bindPopup(popup_ab3d1929a9417ba71ec3abe06588519b)
+        ;
+
+        
+    
+    
+            marker_ea72c3d64ea14f9728804cc2c5d1ac94.bindTooltip(
+                `<div>
+                     Jackson, Michigan, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82bd60be4467ea6351348d078455501d = L.marker(
+                [41.9126, -83.3977],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_fc92298171c13d363c37054866b38f9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de941345ef521fadf2e3c05daaa3ba2a = $(`<div id="html_de941345ef521fadf2e3c05daaa3ba2a" style="width: 100.0%; height: 100.0%;">Monroe, Michigan, USA<br>Products: Special Bar Quality (SBQ) steel</div>`)[0];
+                popup_fc92298171c13d363c37054866b38f9f.setContent(html_de941345ef521fadf2e3c05daaa3ba2a);
+            
+        
+
+        marker_82bd60be4467ea6351348d078455501d.bindPopup(popup_fc92298171c13d363c37054866b38f9f)
+        ;
+
+        
+    
+    
+            marker_82bd60be4467ea6351348d078455501d.bindTooltip(
+                `<div>
+                     Monroe, Michigan, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d95d7e683228b95a7d7d495cfe40a589 = L.marker(
+                [35.3859, -94.3985],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_ca3280f313fda0cbf1764a3c407c146a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5db0699ebbc15fc86218ebf68786d409 = $(`<div id="html_5db0699ebbc15fc86218ebf68786d409" style="width: 100.0%; height: 100.0%;">Fort Smith, Arkansas, USA<br>Products: Special Bar Quality (SBQ) steel</div>`)[0];
+                popup_ca3280f313fda0cbf1764a3c407c146a.setContent(html_5db0699ebbc15fc86218ebf68786d409);
+            
+        
+
+        marker_d95d7e683228b95a7d7d495cfe40a589.bindPopup(popup_ca3280f313fda0cbf1764a3c407c146a)
+        ;
+
+        
+    
+    
+            marker_d95d7e683228b95a7d7d495cfe40a589.bindTooltip(
+                `<div>
+                     Fort Smith, Arkansas, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04727335c8a1ef290032c8df43420661 = L.marker(
+                [32.4824, -97.0208],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_9ea5700d4bb22c180aa79c73f193320b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d6b6b2262518e80f07e4c74c94042c3 = $(`<div id="html_9d6b6b2262518e80f07e4c74c94042c3" style="width: 100.0%; height: 100.0%;">Midlothian, Texas, USA<br>Products: Structural steel, rebar</div>`)[0];
+                popup_9ea5700d4bb22c180aa79c73f193320b.setContent(html_9d6b6b2262518e80f07e4c74c94042c3);
+            
+        
+
+        marker_04727335c8a1ef290032c8df43420661.bindPopup(popup_9ea5700d4bb22c180aa79c73f193320b)
+        ;
+
+        
+    
+    
+            marker_04727335c8a1ef290032c8df43420661.bindTooltip(
+                `<div>
+                     Midlothian, Texas, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9257d66a06b1b0e2882c961889bdbfac = L.marker(
+                [37.2279, -77.4019],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_03ba08953921ebcb1797f0bb5b91d74b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a72ca29cdfe151b6ba2725f0a7b28f3 = $(`<div id="html_2a72ca29cdfe151b6ba2725f0a7b28f3" style="width: 100.0%; height: 100.0%;">Petersburg, Virginia, USA<br>Products: Merchant bars, rebar</div>`)[0];
+                popup_03ba08953921ebcb1797f0bb5b91d74b.setContent(html_2a72ca29cdfe151b6ba2725f0a7b28f3);
+            
+        
+
+        marker_9257d66a06b1b0e2882c961889bdbfac.bindPopup(popup_03ba08953921ebcb1797f0bb5b91d74b)
+        ;
+
+        
+    
+    
+            marker_9257d66a06b1b0e2882c961889bdbfac.bindTooltip(
+                `<div>
+                     Petersburg, Virginia, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e865dfde6de56db44df15d369b6c611 = L.marker(
+                [44.9537, -93.0899],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_3c45d3ed8a047db707a04113eac0930b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a880c4893756536088b803864e86bca1 = $(`<div id="html_a880c4893756536088b803864e86bca1" style="width: 100.0%; height: 100.0%;">St. Paul, Minnesota, USA<br>Products: Rebar, merchant bars</div>`)[0];
+                popup_3c45d3ed8a047db707a04113eac0930b.setContent(html_a880c4893756536088b803864e86bca1);
+            
+        
+
+        marker_8e865dfde6de56db44df15d369b6c611.bindPopup(popup_3c45d3ed8a047db707a04113eac0930b)
+        ;
+
+        
+    
+    
+            marker_8e865dfde6de56db44df15d369b6c611.bindTooltip(
+                `<div>
+                     St. Paul, Minnesota, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d307d25536928726830294541c1ba058 = L.marker(
+                [41.5884, -90.6669],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_ca800a9f93350a633fde10ef5d702188 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_663ce09b17523e1d482280f5131a433c = $(`<div id="html_663ce09b17523e1d482280f5131a433c" style="width: 100.0%; height: 100.0%;">Wilton, Iowa, USA<br>Products: Rebar, merchant bars</div>`)[0];
+                popup_ca800a9f93350a633fde10ef5d702188.setContent(html_663ce09b17523e1d482280f5131a433c);
+            
+        
+
+        marker_d307d25536928726830294541c1ba058.bindPopup(popup_ca800a9f93350a633fde10ef5d702188)
+        ;
+
+        
+    
+    
+            marker_d307d25536928726830294541c1ba058.bindTooltip(
+                `<div>
+                     Wilton, Iowa, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef0adca7ad67f7ac93cf24f43e0db8ea = L.marker(
+                [40.4596, -74.3607],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_e629416bbc1870f741ec59ec3aa3438d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c6175b0ed87a6d60e41b90c48b9a4de = $(`<div id="html_5c6175b0ed87a6d60e41b90c48b9a4de" style="width: 100.0%; height: 100.0%;">Sayreville, New Jersey, USA<br>Products: Rebar, merchant bars</div>`)[0];
+                popup_e629416bbc1870f741ec59ec3aa3438d.setContent(html_5c6175b0ed87a6d60e41b90c48b9a4de);
+            
+        
+
+        marker_ef0adca7ad67f7ac93cf24f43e0db8ea.bindPopup(popup_e629416bbc1870f741ec59ec3aa3438d)
+        ;
+
+        
+    
+    
+            marker_ef0adca7ad67f7ac93cf24f43e0db8ea.bindTooltip(
+                `<div>
+                     Sayreville, New Jersey, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d64d40524b0130ab668626f579b63bc6 = L.marker(
+                [43.8971, -78.9429],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_fc0dd9c3879cb1ab1e4b242d4b751e78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80f8714315e5f10413054f06322cdab5 = $(`<div id="html_80f8714315e5f10413054f06322cdab5" style="width: 100.0%; height: 100.0%;">Whitby, Ontario, Canada<br>Products: Rebar, merchant bars</div>`)[0];
+                popup_fc0dd9c3879cb1ab1e4b242d4b751e78.setContent(html_80f8714315e5f10413054f06322cdab5);
+            
+        
+
+        marker_d64d40524b0130ab668626f579b63bc6.bindPopup(popup_fc0dd9c3879cb1ab1e4b242d4b751e78)
+        ;
+
+        
+    
+    
+            marker_d64d40524b0130ab668626f579b63bc6.bindTooltip(
+                `<div>
+                     Whitby, Ontario, Canada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_596fc24240bf576465b4c8f9841663bb = L.marker(
+                [43.3616, -80.3127],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_5066b8a69f053bcfde912c976e77893f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d36a185dc333ccf513043b55cc635d57 = $(`<div id="html_d36a185dc333ccf513043b55cc635d57" style="width: 100.0%; height: 100.0%;">Cambridge, Ontario, Canada<br>Products: Rebar, merchant bars</div>`)[0];
+                popup_5066b8a69f053bcfde912c976e77893f.setContent(html_d36a185dc333ccf513043b55cc635d57);
+            
+        
+
+        marker_596fc24240bf576465b4c8f9841663bb.bindPopup(popup_5066b8a69f053bcfde912c976e77893f)
+        ;
+
+        
+    
+    
+            marker_596fc24240bf576465b4c8f9841663bb.bindTooltip(
+                `<div>
+                     Cambridge, Ontario, Canada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4540f738fc45f4ed0bb43405fa99f38f = L.marker(
+                [45.5312, -73.4946],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_5f09c6bcc9bea83c625ee9b03b604972 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_629206f5b01baa7f16355d3b4f3cd1a5 = $(`<div id="html_629206f5b01baa7f16355d3b4f3cd1a5" style="width: 100.0%; height: 100.0%;">Longueuil, Quebec, Canada<br>Products: Rebar, merchant bars</div>`)[0];
+                popup_5f09c6bcc9bea83c625ee9b03b604972.setContent(html_629206f5b01baa7f16355d3b4f3cd1a5);
+            
+        
+
+        marker_4540f738fc45f4ed0bb43405fa99f38f.bindPopup(popup_5f09c6bcc9bea83c625ee9b03b604972)
+        ;
+
+        
+    
+    
+            marker_4540f738fc45f4ed0bb43405fa99f38f.bindTooltip(
+                `<div>
+                     Longueuil, Quebec, Canada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99bebbefd9afab28881d4155c8488538 = L.marker(
+                [35.2271, -80.8431],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_e35b0a3356cda394fe5ce018f3aa0a2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07cbd5231409d55269efbd06eb164af2 = $(`<div id="html_07cbd5231409d55269efbd06eb164af2" style="width: 100.0%; height: 100.0%;">Nucor Corporation<br>Location: 夏洛特, 北卡罗来纳州, 美国</div>`)[0];
+                popup_e35b0a3356cda394fe5ce018f3aa0a2c.setContent(html_07cbd5231409d55269efbd06eb164af2);
+            
+        
+
+        marker_99bebbefd9afab28881d4155c8488538.bindPopup(popup_e35b0a3356cda394fe5ce018f3aa0a2c)
+        ;
+
+        
+    
+    
+            marker_99bebbefd9afab28881d4155c8488538.bindTooltip(
+                `<div>
+                     Nucor Corporation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d42cb8d9849e2df5720a48768b574bb = L.marker(
+                [40.4406, -79.9959],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_dcb10dc0f6a994e60b42193e87342ed4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da7a7f8b027e244b5ad148c79b397e16 = $(`<div id="html_da7a7f8b027e244b5ad148c79b397e16" style="width: 100.0%; height: 100.0%;">United States Steel Corporation (U.S. Steel)<br>Location: 匹兹堡, 宾夕法尼亚州, 美国</div>`)[0];
+                popup_dcb10dc0f6a994e60b42193e87342ed4.setContent(html_da7a7f8b027e244b5ad148c79b397e16);
+            
+        
+
+        marker_4d42cb8d9849e2df5720a48768b574bb.bindPopup(popup_dcb10dc0f6a994e60b42193e87342ed4)
+        ;
+
+        
+    
+    
+            marker_4d42cb8d9849e2df5720a48768b574bb.bindTooltip(
+                `<div>
+                     United States Steel Corporation (U.S. Steel)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ddc376a2f656e459a4f4e3b0addfec8 = L.marker(
+                [39.3012, -84.362],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_b9e47e10a81ebceea2b3c8d9db6db01e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17f24064ebb8bb48b57def8fce64b1ac = $(`<div id="html_17f24064ebb8bb48b57def8fce64b1ac" style="width: 100.0%; height: 100.0%;">AK Steel (Cleveland-Cliffs)<br>Location: 威斯特切斯特, 俄亥俄州, 美国</div>`)[0];
+                popup_b9e47e10a81ebceea2b3c8d9db6db01e.setContent(html_17f24064ebb8bb48b57def8fce64b1ac);
+            
+        
+
+        marker_2ddc376a2f656e459a4f4e3b0addfec8.bindPopup(popup_b9e47e10a81ebceea2b3c8d9db6db01e)
+        ;
+
+        
+    
+    
+            marker_2ddc376a2f656e459a4f4e3b0addfec8.bindTooltip(
+                `<div>
+                     AK Steel (Cleveland-Cliffs)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8549dd0273cb563dab12b980a0f8a6eb = L.marker(
+                [41.1306, -85.1289],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_a44c1f981fc5fee7a23d58e15d864c94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_401817c3e931969db8af6187f9da33b6 = $(`<div id="html_401817c3e931969db8af6187f9da33b6" style="width: 100.0%; height: 100.0%;">Steel Dynamics, Inc. (SDI)<br>Location: 韦恩堡, 印第安纳州, 美国</div>`)[0];
+                popup_a44c1f981fc5fee7a23d58e15d864c94.setContent(html_401817c3e931969db8af6187f9da33b6);
+            
+        
+
+        marker_8549dd0273cb563dab12b980a0f8a6eb.bindPopup(popup_a44c1f981fc5fee7a23d58e15d864c94)
+        ;
+
+        
+    
+    
+            marker_8549dd0273cb563dab12b980a0f8a6eb.bindTooltip(
+                `<div>
+                     Steel Dynamics, Inc. (SDI)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af3f00333c55acbd89e70cd9602acebc = L.marker(
+                [46.5219, -84.3461],
+                {}
+            ).addTo(map_6189ed1955337af1585b2354d19dc032);
+        
+    
+        var popup_181530e34710e9baff394275c0c452f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bbfe309f2f789f1d57ef597f184ebfd = $(`<div id="html_8bbfe309f2f789f1d57ef597f184ebfd" style="width: 100.0%; height: 100.0%;">Algoma Steel<br>Location: 苏圣玛丽, 安大略省, 加拿大</div>`)[0];
+                popup_181530e34710e9baff394275c0c452f3.setContent(html_8bbfe309f2f789f1d57ef597f184ebfd);
+            
+        
+
+        marker_af3f00333c55acbd89e70cd9602acebc.bindPopup(popup_181530e34710e9baff394275c0c452f3)
+        ;
+
+        
+    
+    
+            marker_af3f00333c55acbd89e70cd9602acebc.bindTooltip(
+                `<div>
+                     Algoma Steel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
